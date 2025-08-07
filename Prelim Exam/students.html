@@ -1,281 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Attendance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  
+  
+  <style>
+    .card {
+      text-align: center;
+    }
+    .card img {
+      width: 80px;
+      height: 80px;
+      margin: auto;
+    }
+    .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
 
-      
-  <div class="container-fluid">
-  <body>
-   
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-     <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/214943635_849528895998156_1903951484216384999_n.png?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=mFBoQ9Mblh0Q7kNvwGdi7ve&_nc_oc=AdlVVphD6PRzXDA8L9igCbAleks4V2PmwYc64uvWHzEYNoEYNWcZdj-o-U5gvmDPAFo&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=cio97H169CerNeM-UejW8g&oh=00_AfVmDykJzxYrLcnQP0suYNs--oJzCI3rqdoVJeU3Ule8mg&oe=689A6347  " class="rounded" alt="..." style="width: 40px; ;"  >
 
-  <div class="container-fluid">
-    <br>
-    <br>
-    <a class="navbar-brand" href="form.html">Group 2</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh3WRuGYDBpFUbZMH7se086UPCz_H6JfAPmA&s"  alt="" style="width: 40px;">
+
+    <a class="navbar-brand" href="#"><strong>Group 2</strong></a>
+    <div class="collapse navbar-collapse">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Student</a>
+          <a class="nav-link" href="#">Students</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">attendance</a>
+          <a class="nav-link" href="#">Attendance</a>
         </li>
-        
         <li class="nav-item">
-          <a class="nav-link" href="#">Form</a>
+          <a class="nav-link" href="form.html">Form</a>
+        </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
-  </div>
-</nav>
+  </nav>
 
+  <div class="container mt-4">
 
-<!--                    ________________________________________                      -->
-<div class="container text-center">
-  <div class="row">
-    <div class="col-sm-3">
-     <div class="container">
-
-<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
    
-  <div class="card-body" style="background-color: #0d6efd;">
-    <h5 class="card-title">Primary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-     <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
-
-  <div class="card-body" style= "background-color: #18cf4f;  ">
-    <h5 class="card-title">Secondary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-     <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card text-bg-success mb-3" style="max-width: 18rem;">
-  
-  <div class="card-body"    style= "background-color: #e01616;  ">
-    <h5 class="card-title">Success card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-     <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
+    <div class="section-title">
+      <h4 class="text-primary">Students</h4>
+      <span class="badge bg-primary fs-6">3</span>
     </div>
-   
-        <div class="col-4 col-sm-6">
-          <div class="container">
-  
-        <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">No.</th>
-      <th scope="col">Student No.</th>
-      <th scope="col">Name</th>
-      <th scope="col">Status</th>
-      <th scope="col">Gender</th>
-      <th scope="col">Civil Status</th>
-      <th scope="col">Nationality</th>
-      <th scope="col">Date of Birth</th>
-       <th scope="col">Place of Birth</th>
-       <th scope="col">Address</th>
-        <th scope="col">Religion</th>
-        <th scope="col">Contact No.</th>
-        <th scope="col">Email</th>
-
-
-
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>STU2025001</td>
-      <td>John Doe</td>
-      <td></td>
-      <td>Male</td>
-      <td>Single</td>
-      <td>Filipino</td>
-      <td>January 1, 2000</td>
-      <td>Street, Barangay, City, Province </td>
-      <td>Street, Barangay, City, Province, Zipcode, Philippines </td>
-      <td>Roman Catholic  </td>
-      <td>09123456789</td>
-      <td>sample@email.com</td>
-     
-
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>STU2025002</td>
-      <td>Jane Smith</td>
-      <td></td>
-      <td>Female</td>
-      <td>Single</td>
-      <td>Filipino</td>
-      <td>January 1, 2000</td>
-     <td>Street, Barangay, City, Province </td>
-      <td>Street, Barangay, City, Province, Zipcode, Philippines </td>
-      <td>Roman Catholic  </td>
-      <td>09123456789</td>
-      <td>sample@email.com</td>
-    </tr>
-
-    <tr>
-      <th scope="row">3</th>
-      <td>STU2025003</td>
-      <td>Michael Brown</td>
-      <td></td>
-     <td>Male</td>
-      <td>Single</td>
-      <td>Filipino</td>
-      <td>January 1, 2000</td>
-      <td>Street, Barangay, City, Province </td>
-      <td>Street, Barangay, City, Province, Zipcode, Philippines </td>
-      <td>Roman Catholic  </td>
-      <td>09123456789</td>
-      <td>sample@email.com</td>
-    </tr>
-
-    <tr>
-      <th scope="row">4</th>
-      <td>STU2025004</td>
-      <td>Emily Davis</td>
-      <td><button type="button" class="btn btn-danger">Absent</button>
-        <td>Female</td>
-      <td>Single</td>
-      <td>Filipino</td>
-      <td>January 1, 2000</td>
-      <td>Street, Barangay, City, Province </td>
-      <td>Street, Barangay, City, Province, Zipcode, Philippines </td>
-      <td>Roman Catholic  </td>
-      <td>09123456789</td>
-      <td>sample@email.com</td>
-</td>
-
-<tr>
-        <th scope="row">5</th>
-      <td >STU2025005</td>
-      <td>Chris Johnson</td>
-     <td><button type="button" class="btn btn-success">Present</button>
-      <td>Male</td>
-      <td>Single</td>
-      <td>Filipino</td>
-      <td>January 1, 2000</td>
-      <td>Street, Barangay, City, Province </td>
-      <td>Street, Barangay, City, Province, Zipcode, Philippines </td>
-      <td>Roman Catholic  </td>
-      <td>09123456789</td>
-      <td>sample@email.com</td>
-    </tr>
-
-
-    <tr>
-      <th scope="row">6</th>
-      <td>STU2025006</td>
-      <td>Sarah Lee</td>
-      <td><button type="button" class="btn btn-danger">Absent</button>
-      <td>Female</td>
-      <td>Single</td>
-      <td>Filipino</td>
-      <td>January 1, 2000</td>
-      <td>Street, Barangay, City, Province </td>
-      <td>Street, Barangay, City, Province, Zipcode, Philippines </td>
-      <td>Roman Catholic  </td>
-      <td>09123456789</td>
-      <td>sample@email.com</td>
-</td>
-
-<tr>
-    <th scope="row">7</th>
-      <td>STU2025007</td>
-      <td>David Clark</td>
-      <td><button type="button" class="btn btn-success">Present</button>
-      <td>Male</td>
-       <td>Single</td>
-      <td>Filipino</td>
-      <td>January 1, 2000</td>
-     <td>Street, Barangay, City, Province </td>
-      <td>Street, Barangay, City, Province, Zipcode, Philippines </td>
-      <td>Roman Catholic  </td>
-      <td>09123456789</td>
-      <td>sample@email.com</td>
-    </tr>
-
-    <tr>
-      <th scope="row">8</th>
-      <td>STU2025008</td>
-      <td>Laura Wilson </td>
-      <td><button type="button" class="btn btn-danger">Absent</button>
-      <td>Female</td>
-         <td>Single</td>
-      <td>Filipino</td>
-      <td>January 1, 2000</td>
-     <td>Street, Barangay, City, Province </td>
-      <td>Street, Barangay, City, Province, Zipcode, Philippines </td>
-      <td>Roman Catholic  </td>
-      <td>09123456789</td>
-      <td>sample@email.com</td>
-      
-</td>
-
-
-<tr>
-    <th scope="row">9</th>
-      <td>STU2025009</td>
-      <td>Ryan Martinez</td>
-      <td><button type="button" class="btn btn-success">Present</button>
-      <td>Male</td>
-      <td>Single</td>
-      <td>Filipino</td>
-      <td>January 1, 2000</td>
-     <td>Street, Barangay, City, Province </td>
-      <td>Street, Barangay, City, Province, Zipcode, Philippines </td>
-      <td>Roman Catholic  </td>
-      <td>09123456789</td>
-      <td>sample@email.com</td>
-    </tr>
-
-    <tr>
-      <th scope="row"> 10</th>
-      <td >STU2025010</td>
-      <td>Alice Taylor</td>
-      <td><button type="button" class="btn btn-danger">Absent</button>
-      <td>Female</td>
-      <td>Single</td>
-      <td>Filipino</td>
-      <td class="text-nowrap">January 1, 2000</td>
-    <td class="text-nowrap">Street, Barangay, City, Province </td>
-      <td class="text-nowrap">Street, Barangay, City, Province, Zipcode, Philippines </td>
-      <td class="text-nowrap">Roman Catholic  </td>
-      <td class="text-nowrap">09123456789</td>
-      <td class="text-nowrap">sample@email.com</td>
-
-      </td>
-  </tbody>
-
+    <div class="row mb-4">
+    
+      <div class="col-md-4 mb-3">
+        <div class="card border-primary">
+          <img src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg" class="card-img-top mt-3" alt="student">
+          <div class="card-body">
+            <h6>John Doe</h6>
+            <p class="text-muted">STU101001</p>
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Action</button>
             </div>
           </div>
+        </div>
+      </div>
     
-        <hr>
+      <div class="col-md-4 mb-3">
+        <div class="card border-primary">
+          <img src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg" class="card-img-top mt-3" alt="student">
+          <div class="card-body">
+            <h6>Jane Smith</h6>
+            <p class="text-muted">STU2025002</p>
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Action</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card border-primary">
+          <img src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg" class="card-img-top mt-3" alt="student">
+          <div class="card-body">
+            <h6>Michael Brown</h6>
+            <p class="text-muted">STU2025003</p>
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Action</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+   
+    <div class="section-title">
+      <h4 class="text-success">Present</h4>
+      <span class="badge bg-success fs-6">3</span>
+    </div>
+    <div class="row mb-4">
+      <div class="col-md-4 mb-3">
+        <div class="card border-success">
+          <img src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg" class="card-img-top mt-3" alt="student">
+          <div class="card-body">
+            <h6>Chris Johnson</h6>
+            <p class="text-muted">STU2025005</p>
+            <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Action</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card border-success">
+          <img src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg" class="card-img-top mt-3" alt="student">
+          <div class="card-body">
+            <h6>David Clark</h6>
+            <p class="text-muted">STU2025007</p>
+            <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Action</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card border-success">
+          <img src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg" class="card-img-top mt-3" alt="student">
+          <div class="card-body">
+            <h6>Ryan Martinez</h6>
+            <p class="text-muted">STU2025009</p>
+            <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Action</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  </div>
+
  
-  
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
